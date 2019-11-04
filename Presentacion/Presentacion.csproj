@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2875CBBB-D093-4618-9EE4-18D6425024D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccionBorrarHorario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccionBorrarHorario.Designer.cs">
+      <DependentUpon>AccionBorrarHorario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccionBorrarPuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccionBorrarPuesto.Designer.cs">
+      <DependentUpon>AccionBorrarPuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteAccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteAccion.Designer.cs">
+      <DependentUpon>ClienteAccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClienteModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClienteModificar.Designer.cs">
+      <DependentUpon>ClienteModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAyuda.Designer.cs">
+      <DependentUpon>frmAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBienvenida.Designer.cs">
+      <DependentUpon>frmBienvenida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBorrarCP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBorrarCP.Designer.cs">
+      <DependentUpon>frmBorrarCP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleFactura.Designer.cs">
+      <DependentUpon>frmDetalleFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDetalleMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDetalleMesa.Designer.cs">
+      <DependentUpon>frmDetalleMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacturacion.Designer.cs">
+      <DependentUpon>frmFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaReservas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaReservas.Designer.cs">
+      <DependentUpon>frmListaReservas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMesaCerrada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMesaCerrada.Designer.cs">
+      <DependentUpon>frmMesaCerrada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReserva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReserva.Designer.cs">
+      <DependentUpon>frmReserva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReservasCanceladas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReservasCanceladas.Designer.cs">
+      <DependentUpon>frmReservasCanceladas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedorAccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorAccion.Designer.cs">
+      <DependentUpon>ProveedorAccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsumoAccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsumoAccion.Designer.cs">
+      <DependentUpon>InsumoAccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProveedorModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProveedorModificar.Designer.cs">
+      <DependentUpon>ProveedorModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioABM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioABM.Designer.cs">
+      <DependentUpon>UsuarioABM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccionCodigoPostal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccionCodigoPostal.Designer.cs">
+      <DependentUpon>AccionCodigoPostal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccionAgregarHorario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccionAgregarHorario.Designer.cs">
+      <DependentUpon>AccionAgregarHorario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccionAgregarPuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccionAgregarPuesto.Designer.cs">
+      <DependentUpon>AccionAgregarPuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsumosListar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsumosListar.Designer.cs">
+      <DependentUpon>InsumosListar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioAgregar.Designer.cs">
+      <DependentUpon>UsuarioAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioBorrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioBorrar.Designer.cs">
+      <DependentUpon>UsuarioBorrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInsumos.Designer.cs">
+      <DependentUpon>frmInsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioListar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioListar.Designer.cs">
+      <DependentUpon>UsuarioListar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMesas.Designer.cs">
+      <DependentUpon>frmMesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioListarModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioListarModificar.Designer.cs">
+      <DependentUpon>UsuarioListarModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsuarioModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UsuarioModificar.Designer.cs">
+      <DependentUpon>UsuarioModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AccionBorrarHorario.resx">
+      <DependentUpon>AccionBorrarHorario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccionBorrarPuesto.resx">
+      <DependentUpon>AccionBorrarPuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteAccion.resx">
+      <DependentUpon>ClienteAccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClienteModificar.resx">
+      <DependentUpon>ClienteModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAyuda.resx">
+      <DependentUpon>frmAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBienvenida.resx">
+      <DependentUpon>frmBienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBorrarCP.resx">
+      <DependentUpon>frmBorrarCP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleFactura.resx">
+      <DependentUpon>frmDetalleFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDetalleMesa.resx">
+      <DependentUpon>frmDetalleMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacturacion.resx">
+      <DependentUpon>frmFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaReservas.resx">
+      <DependentUpon>frmListaReservas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMesaCerrada.resx">
+      <DependentUpon>frmMesaCerrada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReserva.resx">
+      <DependentUpon>frmReserva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReservasCanceladas.resx">
+      <DependentUpon>frmReservasCanceladas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedorAccion.resx">
+      <DependentUpon>ProveedorAccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsumoAccion.resx">
+      <DependentUpon>InsumoAccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProveedorModificar.resx">
+      <DependentUpon>ProveedorModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioABM.resx">
+      <DependentUpon>UsuarioABM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccionCodigoPostal.resx">
+      <DependentUpon>AccionCodigoPostal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccionAgregarHorario.resx">
+      <DependentUpon>AccionAgregarHorario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccionAgregarPuesto.resx">
+      <DependentUpon>AccionAgregarPuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsumosListar.resx">
+      <DependentUpon>InsumosListar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioAgregar.resx">
+      <DependentUpon>UsuarioAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioBorrar.resx">
+      <DependentUpon>UsuarioBorrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInsumos.resx">
+      <DependentUpon>frmInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioListar.resx">
+      <DependentUpon>UsuarioListar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMesas.resx">
+      <DependentUpon>frmMesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioListarModificar.resx">
+      <DependentUpon>UsuarioListarModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioModificar.resx">
+      <DependentUpon>UsuarioModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Project>{c8052817-507b-474a-b683-9e85f318f11f}</Project>
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{ee1569f6-d3c2-400b-aa6e-90b8ac902fad}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resto.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-icon-3060.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resto11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resto1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
